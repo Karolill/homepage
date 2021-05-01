@@ -1,3 +1,85 @@
 body {
-  background-color: pink;
+  margin: 0;
+  padding: 0;
+  background-color: #fff5ee;
+}
+
+p, h1, button {
+  font-family: "Century gothic", sans-serif;
+}
+
+/*After heading*/
+
+#main-part {
+  min-height: 100vh;
+  padding-top: 10px;
+}
+
+.blury-circle {
+  position: fixed;
+  z-index: -1;
+}
+
+#pink-circle {
+  top: 10px;
+  left: -30px;
+}
+
+#yellow-circle {
+  bottom: -40px;
+  right: calc(50vw - 250px);
+}
+
+#blue-circle {
+  top: -90px;
+  right: -20px;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.3);
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input:active {
+  box-shadow: none;
+  transform: translateY(8px);
+}
+
+.pink {
+  background-color: #ffd3d3;
+}
+
+.blue {
+  background-color: #c1ece9;
+}
+
+.yellow {
+  background-color: #ffeb94;
+}
+
+.pink:hover {
+  background-color: #ffc2c2;
+}
+
+.blue:hover {
+  background-color: #c1dbd8;
+}
+
+.yellow:hover {
+  background-color: #ffda83;
 }

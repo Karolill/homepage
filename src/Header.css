@@ -1,0 +1,122 @@
+/**
+* This file contains the css for the heading, 
+* that is, the pictures, writing and arrows 
+* on the opening screen
+*/
+
+/*For the header as a whole*/
+#header {
+  background-color: #FFF5EE;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+/*css for the text*/
+#writing {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#welcome, #karoline {
+  font-size: 40px;
+  font-family: 'Lucida handwriting', Serif;
+  color: #ffd3d3;
+  animation: hei 5s;
+	-webkit-animation: writing 5s; 
+}
+
+@keyframes writing {
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+/*css for the pictures*/
+img {
+  border-radius: 50%;
+}
+
+#bled {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+#ljubljana {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#trondheim {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+}
+
+#london {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+
+/*css for the arrows
+Inspired by: https://codepen.io/postor/pen/mskxI
+*/
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #ffd3d3;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+@-webkit-keyframes arrow {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s;
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
+}
