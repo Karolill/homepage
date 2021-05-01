@@ -6,7 +6,7 @@
 
 /*For the header as a whole*/
 #header {
-  background-color: #FFF5EE;
+  background-color: #fff5ee;
   width: 100%;
   height: 100vh;
   margin: auto;
@@ -22,17 +22,22 @@
   transform: translate(-50%, -50%);
 }
 
-#welcome, #karoline {
+#welcome,
+#karoline {
   font-size: 40px;
-  font-family: 'Lucida handwriting', Serif;
+  font-family: "Lucida handwriting", Serif;
   color: #ffd3d3;
   animation: hei 5s;
-	-webkit-animation: writing 5s; 
+  -webkit-animation: writing 5s;
 }
 
 @keyframes writing {
-  0% {opacity: 0}
-  100%{opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*css for the pictures*/
@@ -76,47 +81,63 @@ img {
 Inspired by: https://codepen.io/postor/pen/mskxI
 */
 .arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
 }
 
 .arrows path {
-	stroke: #ffd3d3;
-	fill: transparent;
-	stroke-width: 2px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+  stroke: #ffd3d3;
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }
 
 @keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes arrow {
-  0% {opacity:0}
-  40% {opacity:1}
-  80% {opacity:0}
-  100% {opacity:0}
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s;
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s;
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s;
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }

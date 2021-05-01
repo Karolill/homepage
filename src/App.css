@@ -4,7 +4,9 @@ body {
   background-color: #fff5ee;
 }
 
-p, h1, button {
+p,
+h1,
+button {
   font-family: "Century gothic", sans-serif;
 }
 
@@ -35,7 +37,8 @@ p, h1, button {
   right: -20px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
 }
 

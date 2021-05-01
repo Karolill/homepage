@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 interface ButtonProps {
   title: string;
   iconFileName?: string;
   color: string;
-  onclick: any;  //må fikse denne
+  onclick: any;
 }
 
 const Button = (props: ButtonProps) => {
@@ -13,5 +13,5 @@ const Button = (props: ButtonProps) => {
       <button className={props.color}>{props.title}</button>
     </a>
   );
-}
+};
 export default Button;
